@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilonathemba Crèche - Enrolment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #f8b400;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #f8b400;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>Ilonathemba Crèche - Enrolment Form</header>
+    <div class="content">
+        <h2>Enrol Your Child</h2>
+        <div class="form-container">
+            <form action="submit_form.php" method="POST">
+                <h3>Child's Details</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="preferred_name">Preferred Name:</label>
+                <input type="text" id="preferred_name" name="preferred_name">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="id_number">ID Number / Passport:</label>
+                <input type="text" id="id_number" name="id_number" required>
+
+                <h3>Primary Caregiver Details</h3>
+                <label for="parent_name">Full Name:</label>
+                <input type="text" id="parent_name" name="parent_name" required>
+
+                <label for="relationship_status">Relationship Status:</label>
+                <input type="text" id="relationship_status" name="relationship_status">
+
+                <label for="id_number_parent">ID Number:</label>
+                <input type="text" id="id_number_parent" name="id_number_parent" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="whatsapp">WhatsApp Number (if different):</label>
+                <input type="tel" id="whatsapp" name="whatsapp">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="address">Home Address:</label>
+                <textarea id="address" name="address"></textarea>
+
+                <h3>Medical Information</h3>
+                <label for="doctor">Doctor's Name:</label>
+                <input type="text" id="doctor" name="doctor">
+
+                <label for="doctor_contact">Doctor's Contact Number:</label>
+                <input type="tel" id="doctor_contact" name="doctor_contact">
+
+                <label for="allergies">Known Allergies:</label>
+                <textarea id="allergies" name="allergies"></textarea>
+
+                <label for="operations">Serious Operations or Illnesses:</label>
+                <textarea id="operations" name="operations"></textarea>
+
+                <label for="disabilities">Physical Disabilities or Special Needs:</label>
+                <textarea id="disabilities" name="disabilities"></textarea>
+
+                <h3>Educare Centre Agreement</h3>
+                <label for="school_fees">Monthly School Fee (R):</label>
+                <input type="number" id="school_fees" name="school_fees" required>
+
+                <label for="fee_date">Fee Payment Date:</label>
+                <input type="number" id="fee_date" name="fee_date" required>
+
+                <label for="arrival_time">Arrival Time (AM):</label>
+                <input type="time" id="arrival_time" name="arrival_time">
+
+                <label for="pickup_time">Pick-up Time (PM Mon-Thu):</label>
+                <input type="time" id="pickup_time" name="pickup_time">
+
+                <label for="pickup_time_fri">Pick-up Time (PM Fri):</label>
+                <input type="time" id="pickup_time_fri" name="pickup_time_fri">
+
+                <h3>Indemnity Agreement</h3>
+                <p>By submitting this form, you acknowledge and accept the terms outlined in the enrolment agreement, including indemnity and data protection policies.</p>
+
+                <button type="submit">Submit Enrolment</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
